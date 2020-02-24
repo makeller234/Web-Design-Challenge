@@ -3,28 +3,32 @@
 }
 .cloud{
     position: absolute;
-    top:10;
+    top:50px;
     left:0;
     width: 40%;
 }
 
 .hum{
-    positon: absolute;
-    top:10;
-    right:20;
+    position: absolute;
+    top:50px;
+    right:20px;
     width: 40%;
 }
 
 .temp{
     position: absolute;
-    bottom:0;
+    top:200px;
     left:0;
     width: 40%;
 }
 
 .wind{
     position: absolute;
-    bottom:0;
-    right:20;
+    top:200px;
+    right:20px;
     width: 40%;
+}
+
+.centered{
+    text-align: center;
 }

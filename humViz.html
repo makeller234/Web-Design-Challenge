@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Latitude Comparisons</title>
+    <title>Humidity Visualization</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -37,36 +37,30 @@
         </div>
       </nav>
       <!-- End Nav Bar -->
-
-    <div class ="containter">
-        <div class="row">
-            <div class="col-md-7">
-                <h1>Summary: Latitude vs X</h1>
-                <img src="Visualizations/MaxTemp_Lat.png" style = "float:left; margin-right:10px" width="40%" alt="Max Temp versus Latitude Scatter Plot">
-                <p>The purpose of this project is to analyze how weather changes as you get closer
-                    to the equator. To accomplish this, data from over 500 cities was pulled from
-                    OpenWeatherMap API.
-                    <br/>
-                    <br/>
-                    After assembling the data, Matplotlib was used to plot various aspects of the 
-                    weather vs. the latitude. Factors that were looked at are: temperature, cloudiness,
-                    wind speed, and humidity.  This site provides the source data and cisualizations 
-                    created as part of the analysis, as well as explainations of the trends and correlations
-                    observed.
+    <div class="container">
+        <div class = "row">
+            <div class ="col-md-7">
+                <h1>Humidity</h1>
+                <img class = "centered" src="Visualizations/Humidity_Lat.png" alt = "Latitude versus Humidity scatter plot">
+                <br/>
+                <br/>
+                <p>
+                    The above code is looking at the humidity percent for each city and comparing it to it's lattitude. It seems 
+                    fairly scattered and just eyeballing the graph, it just seems like most of the cities, regardless of latitude, 
+                    tend to have humidity that's above 50%.
                 </p>
-                
             </div>
-            <div class = "col-md-5">
+
+            <div class ="col-md-5">
                 <h2>Visualizations</h2>
                 <img class ="cloud" src="Visualizations/Cloudiness_Lat.png" alt ="Cloudiness versus Latitude Scatter Plot">
                 <img class ="hum" src="Visualizations/Humidity_Lat.png" alt ="Humidity versus Latitude Scatter Plot">
                 <img class ="temp" src="Visualizations/MaxTemp_Lat.png" alt ="Max Temp versus Latitude Scatter Plot">
                 <img class ="wind" src="Visualizations/WindSpeed_Lat.png" alt="Wind Speed versus Latitude Scatter Plot">
             </div>
+        
         </div>
     </div>
-
-
 
 </body>
 </html>

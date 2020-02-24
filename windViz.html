@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Wind Speed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="cities.html">Data</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Visualizations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="Visualizations/Cloudiness_Lat.png">Cloudiness</a>
+                <a class="dropdown-item" href="Visualizations/Humidity_Lat.png">Humidity</a>
+                <a class="dropdown-item" href="Visualizations/MaxTemp_Lat.png">Temperature</a>
+                <a class="dropdown-item" href="Visualizations/WindSpeed_Lat.png">Wind Speed</a>
+                </div>
+            </li>
+            </ul>
+        </div>
+        </nav>
+        <!-- End Nav Bar -->
+
+        <div class="container">
+            <div class ="row">
+                <div class ="col-md-7">
+                    <h1>Wind Speed</h1>
+                    <img class ="centered" src="Visualizations/WindSpeed_Lat.png" alt="Wind Speed versus Latitude scatter plot">
+                    <br/>
+                    <br/>
+                    <p>
+                        The above graph compares the MPH Wind Speed with the city's lattitude. Having never really thought about wind speed, 
+                        it's interesting to see that most cities have a wind speed of 15 mph or less, regardless of there position on the equator. 
+                        And after doing a quick google search and finding a usatoday article, it appears that 30 mph is when a wind advisory takes 
+                        affect, so it makes sense that most places would have a low wind speed as wind advisory's (at least in Minneapolis) aren't 
+                        frequent.
+                    </p>
+                </div>
+                <div class ="col-md-5">
+                    <h2>Visualizations</h2>
+                    <img class ="cloud" src="Visualizations/Cloudiness_Lat.png" alt ="Cloudiness versus Latitude Scatter Plot">
+                    <img class ="hum" src="Visualizations/Humidity_Lat.png" alt ="Humidity versus Latitude Scatter Plot">
+                    <img class ="temp" src="Visualizations/MaxTemp_Lat.png" alt ="Max Temp versus Latitude Scatter Plot">
+                    <img class ="wind" src="Visualizations/WindSpeed_Lat.png" alt="Wind Speed versus Latitude Scatter Plot">
+                </div>
+            </div>
+        </div>
+
+
+</body>
+
+</html>
