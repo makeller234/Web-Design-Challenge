@@ -1,34 +1,194 @@
-.imgLoad{
+body{
+    background-color: #2a3348;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-weight: 600;
+    color: #b89273;
+}
+
+h2{
+    font-weight: 500;
+    color: #b89273;
+}
+p{
+    color: #d4c2b5;
+}
+
+table{
+    color:#d4c2b5;
+    border-color: #b89273;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+hr{
+    border-color: #b89273;
+}
+img {
+    box-shadow: 3px 2px 7px #7b7878;
+}
+
+.active{
+    font-weight: 800;
+}
+.data{
+    padding:10px 10px 10px 10px;
+}
+
+/* data table header border color*/
+.table > thead > tr > th {
+    border-bottom: 2px solid #b89273;
+ }
+ /* data table rows border color*/
+ .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    border-top: 1px solid #b89273;
+ }
+
+nav .nav-item{
+    padding: 10px;
+    padding:10px;
+}
+
+nav .navbar-brand {
+    font-size: 24px;
+    font-weight: 300;
+    color: #b89273;
+    background-color: #4f424b;
+    margin-left: 50px;
+}
+
+.navbar-nav>li>.dropdown-menu {
+    margin-top: -8px;
+}
+nav .navbar-nav li a.dropdown-item {
+    font-size: 19px;
+}
+
+nav .navbar-nav li a{
+    font-size: 24px;
+    font-weight: 300;
+    color: #b89273;
+    padding:10px;
+    }
+
+nav .dropdown-menu>li>a {
+    background-color: #4f424b;
+    font-size: 15px;
+}
+.dropdown-menu{
+    background-color: #4f424b;
+
+}
+
+.images li{
     float:left;
-}
-.cloud{
-    position: absolute;
-    top:50px;
-    left:0;
     width: 40%;
+    margin:10px;
 }
 
-.hum{
-    position: absolute;
-    top:50px;
-    right:20px;
-    width: 40%;
+.images img{
+    width:100%;
 }
 
-.temp{
-    position: absolute;
-    top:200px;
-    left:0;
-    width: 40%;
-}
-
-.wind{
-    position: absolute;
-    top:200px;
-    right:20px;
-    width: 40%;
+.vizTitle {
+    margin-left: 50px;
+    margin-bottom: -35px;
 }
 
 .centered{
     text-align: center;
+}
+
+.btn-primary:hover{
+    background-color:#4f424b;
+    border-color:#4f424b;
+    color: #b89273;
+}
+ 
+/*Latitude Button*/
+nav .btn-primary{
+    background-color:#4f424b;
+    border-color: #4f424b;
+    color: #b89273;
+    font-size: 24px;
+}
+.btn-primary:active:hover{
+    background-color: #4f424b;
+    color: #b89273;
+}
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+    background-color: #4f424b;
+    color: #b89273;
+}
+
+/*Data Table stripes*/
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: #4f424b;
+ }
+
+ nav .navbar-nav li a:hover {
+    color: #d4c2b5;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+    /* Floats NavBar Right */
+nav .navContainer{
+    margin-right:15px;
+}
+nav .navbar-collapse.collapse {
+    display: block;
+}
+
+nav .navbar-nav {
+    float: right ;
+}
+
+nav .navbar-nav.navbar-right:last-child {
+    margin-right: 15px ;
+}
+
+nav .navbar-right {
+    float: right ;
+}
+    /* End floats navBar */
+
+
+@media(max-width: 700px){
+    .images{
+        display:flex;
+        margin-left: -50px;
+    }
+    .vizTitle{
+        margin-left:-5px;
+    }
+    .centered{
+        float: center;
+    }
+    nav .navbar-collapse.collapse {
+        clear: both;
+        float: left;
+    }
+    nav .navbar-brand {
+        margin-left: 15px;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding-left: 0;
+    }
+    ul.navbar-nav {
+        padding-left: 20px;
+    }
+    nav .navbar-nav li a {
+        display: block;
+
+    }
+ 
 }

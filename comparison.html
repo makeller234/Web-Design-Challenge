@@ -3,63 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <title>Comparison</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Latitude</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand active" href="index.html">Latitude</a>
+        <div class ="navContainer">
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="cities.html">Data</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="comparison.html">Comparison</a>
-            </li>
+          
+          <ul class="navbar-nav">
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Visualizations
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="Visualizations/Cloudiness_Lat.png">Cloudiness</a>
-                <a class="dropdown-item" href="Visualizations/Humidity_Lat.png">Humidity</a>
-                <a class="dropdown-item" href="Visualizations/MaxTemp_Lat.png">Temperature</a>
-                <a class="dropdown-item" href="Visualizations/WindSpeed_Lat.png">Wind Speed</a>
-                </div>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots <span class="caret"></span>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="cloudViz.html">Cloudiness</a>
+                <a class="dropdown-item" href="humViz.html">Humidity</a>
+                <a class="dropdown-item" href="tempViz.html">Temperature</a>
+                <a class="dropdown-item" href="windViz.html">Wind Speed</a>
+              </div>
             </li>
-            </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="cities.html">Data</a>
+            </li>
+            <li class="nav-item" >
+              <a class="nav-link" href="comparison.html">Comparisons</a>
+            </li>
+
+          </ul>
         </div>
-        </nav>
-        <!-- End Nav Bar -->
+        </div>
+      </nav>
+      <!--End Nav Bar-->
+      
     <div class="container">
         <div class="row">
             <div class ="col-md-12">
                 <h1>Latitude vs X</h1>
+                <hr>
+                <br/>
+                <p>Click on any plot to get an indepth analysis.</p>
             </div>
         </div>
-        <div class ="row">
+        <div class ="row center-block text-center">
             <div class="col-md-6">
-                <h2 class ="centered">vs Cloudiness</h2>
-                <img src="Visualizations/Cloudiness_Lat.png" alt ="Cloudiness versus Latitude scatter plot">
+                <h2>vs Cloudiness</h2>
+                <a href="cloudViz.html"><img src="Visualizations/Cloudiness_Lat.png" alt ="Cloudiness versus Latitude scatter plot"></a> 
             </div>
             <div class = "col-md-6">
-                <h2 class ="centered">vs Humidity</h2>
-                <img src="Visualizations/Humidity_Lat.png" alt ="Humidity versus Latitude scatter plot">
+                <h2>vs Humidity</h2>
+                <a href="humViz.html"> <img src="Visualizations/Humidity_Lat.png" alt ="Humidity versus Latitude scatter plot"></a>
             </div>
         </div>
-        <div class="row">
+        <div class="row center-block text-center">
             <div class = "col-md-6">
-                <h2 class ="centered">vs Maximum Temperature</h2>
-                <img src="Visualizations/MaxTemp_Lat.png" alt ="Max Temp versus Latitude scatter plot">
+                <h2>vs Maximum Temperature</h2>
+                <a href="tempViz.html"> <img src="Visualizations/MaxTemp_Lat.png" alt ="Max Temp versus Latitude scatter plot"></a>
             </div>
             <div class = "col-md-6">
-                <h2 class ="centered">vs Wind Speed</h2>
-                <img src="Visualizations/WindSpeed_Lat.png" alt ="Wind Speed versus Latitude scatter plot"
+                <h2>vs Wind Speed</h2>
+                <a href="windViz.html"><img src="Visualizations/WindSpeed_Lat.png" alt ="Wind Speed versus Latitude scatter plot"></a>
             </div>
         </div>
     </div>
