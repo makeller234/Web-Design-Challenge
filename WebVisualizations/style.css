@@ -1,42 +1,48 @@
-body{
+body {
     background-color: #2a3348;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1{
+h1 {
     font-weight: 600;
     color: #b89273;
 }
 
-h2{
+h2 {
     font-weight: 500;
     color: #b89273;
 }
-p{
+
+p {
     color: #d4c2b5;
 }
 
-table{
+table {
     color:#d4c2b5;
     border-color: #b89273;
 
 }
 
-ul{
+ul {
     list-style-type: none;
 }
 
-hr{
+hr {
     border-color: #b89273;
 }
+
 img {
     box-shadow: 3px 2px 7px #7b7878;
 }
 
-.active{
+.container {
+    padding-bottom: 15px;
+}
+
+.active {
     font-weight: 800;
 }
-.data{
+.data {
     padding:10px 10px 10px 10px;
 }
 
@@ -49,7 +55,7 @@ img {
     border-top: 1px solid #b89273;
  }
 
-nav .nav-item{
+nav .nav-item {
     padding: 10px;
     padding:10px;
 }
@@ -69,7 +75,7 @@ nav .navbar-nav li a.dropdown-item {
     font-size: 19px;
 }
 
-nav .navbar-nav li a{
+nav .navbar-nav li a {
     font-size: 24px;
     font-weight: 300;
     color: #b89273;
@@ -80,18 +86,18 @@ nav .dropdown-menu>li>a {
     background-color: #4f424b;
     font-size: 15px;
 }
-.dropdown-menu{
+.dropdown-menu {
     background-color: #4f424b;
 
 }
 
-.images li{
+.images li {
     float:left;
     width: 40%;
     margin:10px;
 }
 
-.images img{
+.images img {
     width:100%;
 }
 
@@ -100,28 +106,28 @@ nav .dropdown-menu>li>a {
     margin-bottom: -35px;
 }
 
-.centered{
+.centered {
     text-align: center;
 }
 
-.btn-primary:hover{
+.btn-primary:hover {
     background-color:#4f424b;
     border-color:#4f424b;
     color: #b89273;
 }
  
 /*Latitude Button*/
-nav .btn-primary{
+nav .btn-primary {
     background-color:#4f424b;
     border-color: #4f424b;
     color: #b89273;
     font-size: 24px;
 }
-.btn-primary:active:hover{
+.btn-primary:active:hover {
     background-color: #4f424b;
     color: #b89273;
 }
-.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover{
+.open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
     background-color: #4f424b;
     color: #b89273;
 }
@@ -138,7 +144,7 @@ nav .btn-primary{
 }
 
     /* Floats NavBar Right */
-nav .navContainer{
+nav .navContainer {
     margin-right:15px;
 }
 nav .navbar-collapse.collapse {
@@ -160,14 +166,14 @@ nav .navbar-right {
 
 
 @media(max-width: 700px){
-    .images{
+    .images {
         display:flex;
         margin-left: -50px;
     }
-    .vizTitle{
+    .vizTitle {
         margin-left:-5px;
     }
-    .centered{
+    .centered {
         float: center;
     }
     nav .navbar-collapse.collapse {
