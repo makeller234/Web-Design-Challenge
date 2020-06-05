@@ -175,6 +175,11 @@ nav .navbar-right {
     bottom: 0;
     width: 100%;
     padding-top: 7px; 
+    margin-top:10px;
+}
+
+.row{
+    margin-bottom: 35px;
 }
 @media(max-width: 700px){
 
