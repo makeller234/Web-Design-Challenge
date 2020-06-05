@@ -5,16 +5,13 @@ This website showcases the results of the analysis comparing latitude with cloud
 The website can also be viewed without cloning the repo by visiting [this website](https://makeller234.github.io/Web-Design-Challenge/WebVisualizations/). 
 
 User can click on the different graphs or the links in the navigation bar to learn more about the analysis of the different weather trends.
-![Home Page Screen Shot](/readmeImages/homePage.png)
+![HomePageScreenShot](/readmeImages/homePage.png)
 
 The website is also mobile friendly and readjusts when the width is 700px or less.
-![Mobile View](/readmeImages/mobileView.png)
+![MobileView](/readmeImages/mobileView.png)
 
 ## Built with
 * HTML
 * Bootstrap
 * CSS
 
-## Installing
-* Git Clone the repository to your local machine
-* Open index.html in your preferred browser
